@@ -18,6 +18,7 @@
         tools:layout_editor_absoluteY="-2dp" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="235dp"
         android:layout_height="203dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,19 +36,28 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="16dp"
+
                 android:text="Ah, I see! You want the ImageView to move within the layout, not animate it. In that case, there are a few ways you can control the positioning of the ImageView in your ConstraintLayout. Since you're using constraints, the ImageView will stay at a fixed position based on the constraints you've set.
 
 If you want to adjust the position of the ImageView by manipulating the constraints dynamically (i.e., move it programmatically in response to some event or condition), here's how you can do it:
 
 Move the ImageView Programmatically using ConstraintSet
 You can adjust the constraints of the ImageView programmatically to move it to a new position. This is useful if you want to change its position based on user interaction or some event in your app"
-
-                android:textSize="16sp"
-                android:padding="16dp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
     </ScrollView>
 
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
