@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="275dp"
+        android:layout_height="309dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/durlogo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <ScrollView
+        android:layout_width="235dp"
+        android:layout_height="203dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Adding TextView inside LinearLayout -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ah, I see! You want the ImageView to move within the layout, not animate it. In that case, there are a few ways you can control the positioning of the ImageView in your ConstraintLayout. Since you're using constraints, the ImageView will stay at a fixed position based on the constraints you've set.
+
+If you want to adjust the position of the ImageView by manipulating the constraints dynamically (i.e., move it programmatically in response to some event or condition), here's how you can do it:
+
+Move the ImageView Programmatically using ConstraintSet
+You can adjust the constraints of the ImageView programmatically to move it to a new position. This is useful if you want to change its position based on user interaction or some event in your app"
+
+                android:textSize="16sp"
+                android:padding="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
